@@ -73,7 +73,7 @@
                 <a href="https://scholar.google.com/citations?user=h5xex20AAAAJ&hl=zh-CN">Lang Chen</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=zh-CN&oi=ao">Qian He</a><sup>2</sup>,
+                <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&authuser=1&user=9rWWCgUAAAAJ">Qian He</a><sup>2</sup>,
               </span>
               <span class="author-block">
                 <a
@@ -130,7 +130,7 @@
       <div class="hero-body">
         <img src="static/images/teaser.png" alt="" width="2160" />
 
-        <h2 class="subtitle has-text-centered">
+        <h2 class="content has-text-centered">
           Given a style reference image, <b><i>DEADiff</i></b> is capable of synthesizing new images that resemble the style and are faithful to text prompts simultaneously. However, previous encoder-based methods (i.e., <b>T2I-Adapter</b>) significantly impair the text controllability of the diffusion-based text-to-image models.
         </h2>
       </div>
@@ -223,49 +223,71 @@
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column custom-width">
-            <h2 class="title is-2"> Applications</h2>
-            <h2 class="title is-4"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Content image-based stylization</h2>
-            <div class="columns is-centered has-text-justified">
-              <td colspan="3">
-                <img src="static/images/style_transfer.png" alt="" width="700" />
-              </td>
+        <h2 class="title is-2 has-text-centered"> Applications</h2>
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Content image-based stylization</h2>
+        <div id="results-carousel-more" class="carousel results-carousel">
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/style_transfer1.png"
+                     alt="Puppet."/>
             </div>
-            <p><br></p>
-
-            <h2 class="title is-4"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style mixing</h2>
-            <div class="columns is-centered has-text-justified">
-              <td colspan="3">
-                <img src="static/images/style_mixing.png" alt="" width="1080" />
-              </td>
-            </div>
-            <p><br></p>
-
-            <h2 class="title is-4"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Combination with DreamBooth/LoRA</h2>
-            <div class="columns is-centered has-text-justified">
-              <td colspan="3">
-                <img src="static/images/dreambooth_lora.png" alt="" width="1080" />
-              </td>
-            </div>
-            <p><br></p>
-
-            <h2 class="title is-4"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Stylization of reference semantics</h2>
-            <div class="columns is-centered has-text-justified">
-              <td colspan="3">
-                <img src="static/images/semantic_stylization.png" alt="" width="1080" />
-              </td>
-            </div>
-            <div class="content has-text-justified">
-              <td colspan="3">
-                <p>
-                  This is a novel application of <b><i>DEADiff</i></b>. Instructed by the "content" condition,  <b><i>DEADiff</i></b> can extract the semantics of a reference image and achieve its stylization under the guidance of an extra text prompt.
-                </p>
-              </td>
-            </div>
-            <p><br></p>
           </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/style_transfer2.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
+          <div class="item item-puppet">
+            <div class="carousel-content">
+              <img src="static/images/style_transfer3.png"
+                     alt="Puppet."/>
+            </div>
+          </div>
+  
         </div>
+        <!-- <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/style_transfer.png" alt="" width="700" />
+          </td>
+        </div> -->
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style mixing</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/style_mixing.png" alt="" width="1080" />
+          </td>
+        </div>
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Combination with DreamBooth/LoRA</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/dreambooth_lora.png" alt="" width="1080" />
+          </td>
+        </div>
+        <p style="margin-bottom: 20px;"><br></p>
+
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Stylization of reference semantics</h2>
+        <div class="columns is-centered has-text-justified">
+          <td colspan="3">
+            <img src="static/images/semantic_stylization.png" alt="" width="1080" />
+          </td>
+        </div>
+        <div class="content has-text-justified">
+          <td colspan="3">
+            <p>
+              This is a novel application of <b><i>DEADiff</i></b>. Instructed by the "content" condition,  <b><i>DEADiff</i></b> can extract the semantics of a reference image and achieve its stylization under the guidance of an extra text prompt.
+            </p>
+          </td>
+        </div>
+        <p><br></p>
+      </div>
+    </div>
   </section>
 
   <!-- Video grid Extension -->
@@ -273,10 +295,10 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="section-title">
-          <h2 class="title is-3 is-centered">More Examples</h2>
+          <h2 class="title is-2 is-centered">More Examples</h2>
         </div>
   
-        <div id="results-carousel-face" class="carousel results-carousel">
+        <div id="results-carousel-more" class="carousel results-carousel">
   
           <div class="item item-puppet">
             <div class="carousel-content">
