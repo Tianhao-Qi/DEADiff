@@ -3,45 +3,43 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="DEADiff" />
-  <meta property="og:description" content="Creating your images in any style!" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="pics/icon.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-
-  <meta name="twitter:title" content="DEADiff">
-  <meta name="twitter:description" content="creating your images in any style!">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="pics/icon.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="description"
+        content="DEADiff: An Efficient Stylization Diffusion Model with Disentangled Representations.">
+  <meta name="keywords" content="Create images in any style!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
   <title>DEADiff: An Efficient Stylization Diffusion Model with Disentangled Representations</title>
-  <!-- <link rel="icon" type="image/x-icon" href="pics/icon.png"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 </head>
 
 <body>
@@ -393,78 +391,34 @@
   </section> -->
   <!--End BibTex citation -->
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <footer class="footer">
-        <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-8">
-              <div class="content">
-                <p>
-                  This website is licensed under a <a rel="license"
-                    href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-                    Commons Attribution-ShareAlike 4.0 International License</a>.
-                </p>
-                <p>
-                  Website source code based on the <a href="https://nerfies.github.io/">Nerfies</a> project page.
-                </p>
-
-              </div>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link"
+           href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            </p>
           </div>
         </div>
-      </footer>
-
-      <!-- Statcounter tracking code -->
-
-      <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-      <!-- End of Statcounter Code -->
-      <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-          const videoWrappers = document.querySelectorAll('.video-wrapper');
-
-          videoWrappers.forEach(wrapper => {
-            const defaultVideo = wrapper.querySelector('.default-video');
-            const aspectRatio = defaultVideo.videoWidth / defaultVideo.videoHeight;
-            const height = wrapper.offsetWidth / aspectRatio;
-
-            wrapper.style.height = `${height}px`;
-
-            wrapper.addEventListener('mouseenter', () => {
-              defaultVideo.pause();
-              hoverVideo.play();
-            });
-
-            wrapper.addEventListener('mouseleave', () => {
-              defaultVideo.play();
-              hoverVideo.pause();
-            });
-          });
-        });
-        $(document).ready(function () {
-          var carouselItems = $('.carousel .item');
-          var numItems = carouselItems.length;
-          var numVideos = 5;
-          var currentIndex = 0;
-
-          $('.carousel').on('click', function () {
-            currentIndex++;
-            if (currentIndex + numVideos <= numItems) {
-              carouselItems.removeClass('active');
-              carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
-            } else {
-              currentIndex = 0;
-              carouselItems.removeClass('active');
-              carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
-            }
-          });
-
-          carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
-        });
-      </script>
+      </div>
     </div>
-  </section>
+  </footer>
 </body>
 
 </html>
