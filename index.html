@@ -172,13 +172,13 @@
             <div class="content has-text-justified">
               <td colspan="3">
                 <p>
-                  <b>Core Idea:</b> To remove the interference of semantics from the reference image, only extract its style-relevant features and inject them into the layers responsible for capturing style features in the diffusion UNet.
+                  <b>Core Idea:</b> To remove the interference of semantics from the reference image, only extract its style-relevant features and inject them into the layers responsible for capturing style features in the diffusion U-Net.
                 </p>
                 <p>
-                  <b>Training paradigm:</b> Instruct the Q-Former on the condition of "style" and "condition" to selectively extract corresponding features and inject them into mutually exclusive subsets of cross-attention layers for better disentanglement between semantics and styles. Our constructed training dataset with three distinct types of paired reference and target image is utilized to equip the Q-Former with the capability of disentangled representation extraction.
+                  <b>Training Paradigm:</b> Instruct the Q-Former on the condition of "style" and "content" to selectively extract corresponding features and inject them into mutually exclusive subsets of cross-attention layers for better disentanglement between semantics and styles. Our constructed training dataset with three distinct types of paired reference and target image is utilized to equip the Q-Former with the capability of disentangled representation extraction.
                 </p>
                 <p>
-                  <b>Inference paradigm:</b> Inject the output queries of the Q-Former with ``style" conditions to fine layers of the diffusion UNet, which respond to style information rather than global semantics.
+                  <b>Inference Paradigm:</b> Inject the output queries of the Q-Former with "style" conditions to fine layers of the diffusion U-Net, which respond to style information rather than global semantics.
                 </p>
 
               </td>
@@ -207,12 +207,12 @@
 
               <td><img class="center" src="static/images/quantitative.png" alt=""/></td>
               <p>
-                <b>Quantitatively</b>: <b><i>DEADiff</i></b> achieves an optimal balance between text fidelity and image similarity with the most pleasing image quality. Meanwhile, the big margin achieved by <b><i>DEADiff</i></b> further demonstrates its broad application prospects.
+                <b>Quantitatively</b>: <b><i>DEADiff</i></b> achieves an optimal balance between text fidelity and style similarity with the most pleasing image quality. Meanwhile, the big margin in user preference achieved by <b><i>DEADiff</i></b> further demonstrates its broad application prospects.
               </p>
             </div>
           </div>
         </div>
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Comparisons with IPAdapter</h2>
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Comparisons with IP-Adapter</h2>
         <div id="results-carousel-ipadapter" class="carousel results-carousel">
 
           <div class="item item-puppet">
@@ -281,7 +281,7 @@
         </div> -->
         <p style="margin-bottom: 20px;"><br></p>
 
-        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style mixing</h2>
+        <h2 class="title is-4 has-text-centered"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Style Mixing</h2>
         <div class="columns is-centered has-text-justified">
           <td colspan="3">
             <img src="static/images/style_mixing.png" alt="" width="1080" />
